@@ -18,12 +18,20 @@ body {
      padding: 13px 17px 20px;
      background: #fff;
      position: absolute;
-     top: 0;
+     top: -25px;
+     visibility: hidden;
      transform: translate(-50%);
      left: 50%;
      border-top: 3px solid #ea4d67;
-     box-shadow: 0 10px 25px rgba(52, 82, 220, 0.4)
+     box-shadow: 0 10px 25px rgba(52, 82, 220, 0.4);
+     transition: all 0.45s ease;
+     
 
+}
+
+.popup.show {
+     top: 0;
+     visibility: visible;
 }
 .popup .icon i  {
      width: 40px;
@@ -60,4 +68,5 @@ body {
      cursor: pointer;
      padding: 9px 15px;
      cursor:#5372f0;
+     background-color: #5372f0;
 }
